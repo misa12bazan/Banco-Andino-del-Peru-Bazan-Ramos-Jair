@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingresar - Banco Andino Perú</title>
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<header><a class="marca" href="index.html">Banco Andino Perú</a><nav><a href="index.html">Inicio</a></nav></header>
+<main class="dos">
+<section class="tarjeta"><h2>Iniciar sesión</h2>
+<form id="formLogin"><label for="lcorreo">Correo</label><input id="lcorreo" name="correo" type="email" required>
+<label for="lclave">Contraseña</label><input id="lclave" name="contrasena" type="password" required>
+<p><button type="submit">Iniciar sesión</button></p></form>
+<p id="msgLogin" class="msg" role="alert" hidden></p></section>
+<section class="tarjeta"><h2>Crear cuenta</h2>
+<form id="formCuenta"><label for="cnombre">Nombre completo</label><input id="cnombre" name="nombre" required maxlength="100">
+<label for="ccorreo">Correo</label><input id="ccorreo" name="correo" type="email" required>
+<label for="cclave">Contraseña</label><input id="cclave" name="contrasena" type="password" required minlength="4">
+<p><button type="submit">Crear cuenta</button></p></form>
+<p id="msgCuenta" class="msg" role="alert" hidden></p></section>
+</main>
+<script type="module" src="js/auth/login.js"></script>
+</body>
+</html>

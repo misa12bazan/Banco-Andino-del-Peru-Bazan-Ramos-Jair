@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editar solicitud - Banco Andino Perú</title>
+<link rel="stylesheet" href="css/actualizar.css">
+</head>
+<body>
+<header><a class="marca" href="index.html">Banco Andino Perú</a><nav id="nav"></nav></header>
+<main><section class="tarjeta"><h1>Editar solicitud <span class="codigo" id="codigo"></span></h1>
+<form id="formActualizar"><div class="grid">
+<div><label for="nombres">Nombres</label><input id="nombres" name="nombres" required maxlength="80"></div>
+<div><label for="apellidos">Apellidos</label><input id="apellidos" name="apellidos" required maxlength="80"></div>
+<div><label for="dni">DNI</label><input id="dni" name="dni" required inputmode="numeric" pattern="[0-9]{8}" title="8 dígitos" maxlength="8"></div>
+<div><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" required pattern="9[0-9]{8}" title="9 dígitos, empieza con 9" maxlength="9"></div>
+<div><label for="tipo_cuenta">Tipo de cuenta</label><select id="tipo_cuenta" name="tipo_cuenta" required><option value="ahorros">Ahorros</option><option value="corriente">Corriente</option><option value="sueldo">Sueldo</option></select></div>
+<div><label for="moneda">Moneda</label><select id="moneda" name="moneda" required><option value="PEN">Soles (S/)</option><option value="USD">Dólares (US$)</option></select></div>
+<div><label for="monto_inicial">Monto inicial</label><input id="monto_inicial" name="monto_inicial" type="number" min="0" step="0.01" required></div>
+</div>
+<p><button type="submit">Guardar cambios</button> <a class="btn sec" href="consulta.html">Volver a mis solicitudes</a></p></form>
+<p id="msgActualizar" class="msg" role="alert" hidden></p></section></main>
+<script type="module" src="js/actualizar/actualizar.js"></script>
+</body>
+</html>
